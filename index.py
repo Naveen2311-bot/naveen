@@ -20,7 +20,7 @@ st.markdown("""
 st.text("Let's go")
 st.image("Image.jpg",width=500)
 
-data = pd.read_csv("D:\Project Spam\spam.csv")
+data = pd.read_csv("spam.csv")
 
 data.drop_duplicates(inplace=True)
 data['Category'] = data['Category'].replace(['ham','Spam'],['Not Spam','Spam'])
